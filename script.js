@@ -38,4 +38,8 @@ function checkWin() {
   }
 }
 
-
+function resetGame() {
+  gameWon = false;
+  currentPlayer = "X";
+  cells.forEach(cell => (cell.textContent = ""));
+}
